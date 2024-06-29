@@ -4,8 +4,7 @@ public class LoopFor {
 
         for (int i = 100; i >= 1; i--) {
             if (multiplyOfFour(i)) {
-                System.out.print(i);
-                System.out.print(" ");
+                System.out.print(i + " ");
             }
         }
     }

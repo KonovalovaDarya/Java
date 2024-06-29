@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class Numbers {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int x = scanner.nextInt();
+        System.out.print("Enter number: ");
+        int x = Math.abs(scanner.nextInt());
         int sum = 0, sumOdd = 0, max = 0;
 
         do {
