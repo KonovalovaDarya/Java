@@ -1,3 +1,7 @@
+import java.time.Year;
+import java.util.Calendar;
+import java.util.Date;
+
 public class Person {
     private String name;
     private String middleName;
@@ -52,6 +56,10 @@ public class Person {
     }
 
     public int birthYear() {
-        return (2024 - age);
+//        Date year = new Date();
+//        return (year.getYear() + 1900 - age);
+
+        Calendar date = Calendar.getInstance();
+        return (date.get(Calendar.YEAR) - age);
     }
 }
